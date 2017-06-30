@@ -3,7 +3,7 @@
 ## Installation on Debian, Ubuntu or derivatives
 you will need python3, pip, curl, pcscd and Git if not already installed on your machine
 
-`sudo apt install python3-pip curl pcscd python3-pykcs11`
+`sudo apt install python3-pip curl pcscd python3-pykcs11 python3-pyscard python3-httplib2`
 
 add the NHSbuntu packagecloud repo and install driver packages for smart card readers on Linux
 
