@@ -1,9 +1,6 @@
 # NHSbuntu-identity-agent
 
 ## Installation on Debian, Ubuntu or derivatives
-you will need python3, pip, curl, pcscd and Git if not already installed on your machine
-
-`sudo apt install python3-pip curl pcscd python3-pykcs11 python3-pyscard python3-httplib2`
 
 add the NHSbuntu packagecloud repo and install driver packages for smart card readers on Linux
 
@@ -11,11 +8,13 @@ add the NHSbuntu packagecloud repo and install driver packages for smart card re
 
 NOTE: if you are on a version of Ubuntu other than 16.04/xenial (or an Ubuntu derivative like mint) then you need to ensure that the distro codename is added correctly in etc/apt/sources.list.d/nhsbuntu-smartcards.list (should point to 'ubuntu' and 'xenial main')
 
-`sudo apt install libclassicclient libssl0.9.8 ifdokccid`
+`sudo apt install python-pip python3-dev curl git pcscd swig libclassicclient libssl0.9.8 ifdokccid`
+
+`pip install pyscard httplib2 pykcs11`
 
 `git clone` this repo then `cd` into the cloned directory
 
-## Usage (testing)
+## Usage (in testing)
 
 `python -i authenticator.py`
 
